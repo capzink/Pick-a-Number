@@ -1,38 +1,79 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding: 0px;
+}
+body{
+   background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121, 1) 35%, rgba(0,212,255,1) 100%);
+  color: white;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+.gamer{
+  display: none;
+}
+
+.gametitle{
+  font-family: 'oswald', Courier, monospace;
+}
+.gamescore{
+  margin: 10px;
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+}
+.form label{
+  margin: 10px;
+}
+
+form input {
+  padding: 10px;
+  margin: 100px;
+  width: 100px;
+  margin: auto;
+  border:solid;
+  font-size: 20px;
+  
+}
+form label{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  font-family: 'Oswald';
+  border: 0;
+  cursor: pointer;
+  background-color:rgb(165, 238, 238);
+  
 }
+.btn-reset {
+  padding: 10px;
+  border-radius: 10px;
+  font-family: 'Oswald';
+  border: 0;
+  cursor: pointer;
+  background-color:rgb(165, 238, 238);
+  margin-left: 120px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
